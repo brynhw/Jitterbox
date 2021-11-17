@@ -1,0 +1,25 @@
+Package: Jitterbox
+Title: Make boxplots and stripplots by group 
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Brynley",
+           family = "Hanson-Wright",
+           role = c("aut", "cre"),
+           email = "brynhw@student.ubc.ca")
+Description: This package includes the function `box.bygroup` used to make ggplots that 
+    display the distribution of a quantiative variable within each group of a categorical 
+    variable. It displays boxplots, stripplots, and means within each group to visualize 
+    both raw data and summary statistics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    ggplot2,
+    dplyr,
+    magrittr,
+    gapminder
