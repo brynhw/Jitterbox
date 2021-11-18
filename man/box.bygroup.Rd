@@ -77,7 +77,8 @@ group. The stripplots are coloured by the grouping variable and alpha
 transparency allows for visualization of overlapping points.
 }
 \examples{
-box.bygroup(iris, Sepal.Length, Species, mytitle = "Sepal length by species",numeric.lab = "sepal length", group.lab = "species", point.alpha = 0.7, mean.shape = 3)
+box.bygroup(iris, Sepal.Length, Species, mytitle = "Sepal length by species",
+numeric.lab = "sepal length", group.lab = "species", point.alpha = 0.7, mean.shape = 3)
 
 #if the following example did not include as.factor() the function will work but produce a warning.
 box.bygroup(ToothGrowth, len, as.factor(dose))

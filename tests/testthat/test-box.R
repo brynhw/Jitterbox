@@ -6,7 +6,6 @@ test_that("Testing parameter input error messages", {
   expect_error(box.bygroup(iris, Sepal.Length, Species, group.lab = TRUE), "The group.lab parameter needs to be a character input")
 })
 
-
 test_that("Testing missing value warning messages", {
 
   example.df1 <- data.frame(
@@ -21,11 +20,9 @@ test_that("Testing missing value warning messages", {
   expect_warning(box.bygroup(example.df2, col1, col2), "The grouping variable has missing values.")
 })
 
-
 test_that("Title and axes  are properly labelled",{
   test.plot2 <- box.bygroup(iris, Sepal.Length, Species, mytitle = "graph", numeric.lab = "sepal length", group.lab = "species")
   expect_identical(test.plot2$labels$title, "graph")
   expect_identical(test.plot2$labels$x, "species")
   expect_identical(test.plot2$labels$y, "sepal length")
 })
-
