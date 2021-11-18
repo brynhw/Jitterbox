@@ -18,7 +18,7 @@ box.bygroup(
 \arguments{
 \item{df}{The data frame containing the columns to plot. This must be a data
 frame containing the columns used for the numeric.var and group.var arguments.
-This paramter name is used because df is a common way to refer to a dataframe.}
+This parameter name is used because df is a common way to refer to a dataframe.}
 
 \item{numeric.var}{The numeric variable to plot. This parameter must be a
 numeric column in df. This parameter name is used to clearly specify that a
@@ -28,7 +28,7 @@ The second part "var" is common shorthand for variable.}
 
 \item{group.var}{The categorical variable to group by. This parameter can be
 of any class and will be converted into a factor. To avoid warnings, the input
-must be a factor. This parameter name was also chosen to emphasise that it
+must be a factor. This parameter name was also chosen to emphasize that it
 is the grouping variable without needing to state which axis this belong on.
 It is "group" and not "factor" because the function can convert other formats
 into a factor. The second part "var" is common shorthand for variable.}
@@ -72,7 +72,7 @@ for each group overlapped by stripplots of all data points.
 \details{
 This is a plot to visualize group differences in a quantitative
 variable. The boxplots provide statistical information and the stripplots show
-the raw data values. In addition, a X is added to depict the mean for each
+the raw data values. In addition, an X is added to depict the mean for each
 group. The stripplots are coloured by the grouping variable and alpha
 transparency allows for visualization of overlapping points.
 }

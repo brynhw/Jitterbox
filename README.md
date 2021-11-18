@@ -20,7 +20,7 @@ repository with:
 
 ``` r
 #install.packages("devtools")
-#devtools::install_github("brynhw/Jitterbox", ref = "0.1.0") 
+#devtools::install_github("brynhw/Jitterbox") 
 ```
 
 ## Examples
