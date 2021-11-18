@@ -6,40 +6,22 @@
 #'
 #' @param df The data frame containing the columns to plot. This must be a data
 #' frame containing the columns used for the numeric.var and group.var arguments.
-#' This parameter name is used because df is a common way to refer to a dataframe.
 #' @param numeric.var The numeric variable to plot. This parameter must be a
-#' numeric column in df. This parameter name is used to clearly specify that a
-#' numeric input is required and avoid specifying an "x" or "y" axis given that
-#' it would be easy for users to forget which variable is placed on each axis.
-#' The second part "var" is common shorthand for variable.
+#' numeric column in df.
 #' @param group.var The categorical variable to group by. This parameter can be
 #' of any class and will be converted into a factor. To avoid warnings, the input
-#'  must be a factor. This parameter name was also chosen to emphasize that it
-#'  is the grouping variable without needing to state which axis this belong on.
-#'  It is "group" and not "factor" because the function can convert other formats
-#'  into a factor. The second part "var" is common shorthand for variable.
+#'  must be a factor.
 #' @param mytitle The optional title for the plot. Must be entered in quotation
-#' marks. Defaults to blank if not specified. The parameter name was chosen to
-#' clearly refer to the title without using the exact word "title" as this is
-#' already used in ggplot within the function and I wanted to avoid any confusion
-#' between the two terms.
+#' marks. Defaults to blank if not specified.
 #' @param numeric.lab The optional axis label for the numeric variable. Must be
-#' entered in quotation marks. Defaults to blank if not specified. This parameter
-#' name begins with "numeric" to indicate that it refers to the previous "numeric.var"
-#' and the second part "lab" is a common reference to labels.
+#' entered in quotation marks. Defaults to blank if not specified.
 #' @param group.lab The optional axis label for the grouping variable. Must be
-#' entered in quotation marks. Defaults to blank if not specified. This parameter
-#' name begins with "group" to indicate that it refers to the previous "group.var"
-#' and the second part "lab" is a common reference to labels.
+#' entered in quotation marks. Defaults to blank if not specified.
 #' @param point.alpha The optional value for the alpha transparency of the
-#' jittered points.  Defaults to 0.5  if not specified. This parameter name
-#' includes "point" so that users know which of the geom layers this applies to.
-#' The default of 0.5 is good with small datasets (e.g., iris and ToothGrowth)
-#' but will likely be better with smaller values for larger datasets.
+#' jittered points.  Defaults to 0.5  if not specified.
 #' @param mean.shape The optional entry to specify the geom shape for the mean
 #' value using the numbers associated with each shape in ggplot. It defaults to
-#' shape 4 which is an X. The parameter name refers to mean so that users know
-#' this is the shape to indicate the mean value.
+#' shape 4 which is an X.
 #'
 #' @return A ggplot object with layered boxplots and stripplots of the numeric
 #' variable distribution within each of the groups of the categorical variable.
